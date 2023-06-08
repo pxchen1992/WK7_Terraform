@@ -10,11 +10,11 @@ terraform {
 }
 
 provider "aws" {
-  region  = "ap-southeast-2"
+  region = "ap-southeast-2"
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0ef66fb3631e10714"
+  ami           = "ami-0310483fb2b488153"
   instance_type = "t2.micro"
 
   tags = {
@@ -23,7 +23,7 @@ resource "aws_instance" "app_server" {
 }
 
 resource "aws_instance" "api_server" {
-  ami           = "ami-0ef66fb3631e10714"
+  ami           = "ami-0310483fb2b488153"
   instance_type = "t2.micro"
 
   tags = {
